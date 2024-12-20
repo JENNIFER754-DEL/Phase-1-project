@@ -1,10 +1,9 @@
-/* About Us Page Styles */
 body {
     font-family: 'Lora', serif;
 }
 
 header {
-    background-color: #6a4e23; /* Coffee color */
+    background-color: #6a4e23; 
     padding: 20px 0;
     color: white;
 }

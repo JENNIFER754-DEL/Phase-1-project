@@ -1,4 +1,4 @@
-// Example JavaScript for smooth scrolling on navigation
+
 $(document).ready(function () {
     $(".nav-link").on('click', function (event) {
         if (this.hash !== "") {

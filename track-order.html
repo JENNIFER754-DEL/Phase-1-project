@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - Coffee Shop</title>
+    <title>Track Order - Coffee Shop</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">Vikings Coffee</a>
@@ -24,54 +23,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="cart.html">Cart</a>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="track-order.html">Cart</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Checkout Section -->
-    <section class="checkout-section py-5">
+    <section class="track-order-section py-5">
         <div class="container">
-            <h2 class="text-center">Checkout</h2>
-            <form id="checkout-form">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="address">Shipping Address</label>
-                            <input type="text" id="address" class="form-control" placeholder="Enter your shipping address" required>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="text-center">Track Your Order</h2>
+            <form id="track-order-form">
                 <div class="form-group">
-                    <label for="payment">Payment Method</label>
-                    <select id="payment" class="form-control" required>
-                        <option value="Credit Card">Credit Card</option>
-                        <option value="PayPal">PayPal</option>
-                        <option value="Bank Transfer">Bank Transfer</option>
-                    </select>
+                    <label for="order-id">Order ID</label>
+                    <input type="text" id="order-id" class="form-control" placeholder="Enter your order ID" required>
                 </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Pay Now</button>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">Track Order</button>
                 </div>
             </form>
-
-           
-            <div class="cart-summary mt-4">
-                <h4>Cart Summary</h4>
-                <ul id="cart-items">
-                  
-                </ul>
-                <p><strong>Total: $<span id="total-price">0.00</span></strong></p>
-            </div>
+            <div id="order-status" class="mt-4"></div>
         </div>
     </section>
 
@@ -97,8 +73,9 @@
             <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
         </div>
     </footer>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/checkout.js"></script>
+    <script src="js/trackorder.js"></script>
 </body>
 </html>

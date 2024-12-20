@@ -1,16 +1,7 @@
-/* General Layout */
-/* Set Background Color for the Page */
 body {
-    background-color: #6f4f37; /* Coffee brown color */
-    color: white; /* Make text color white to contrast with the brown background */
+    background-color: #6f4f37;
+    color: white;
 }
-
-/* General Layout */
-.menu-section, .promotional-flavors {
-    margin-top: 30px;
-}
-
-/* Rest of the CSS styles remain unchanged */
 
 .menu-section, .promotional-flavors {
     margin-top: 30px;
@@ -46,9 +37,8 @@ body {
     margin-top: 10px;
 }
 
-/* Buttons */
 .btn-primary {
-    background-color: #510994; /* Coffee color */
+    background-color: #510994;
     border: none;
 }
 
@@ -66,10 +56,10 @@ body {
 }
 
 .promo-price {
-    color: #d9534f; /* Discount color */
+    color: #d9534f;
     font-weight: bold;
 }
-/* Cart Section Styling */
+
 .cart-section {
     padding: 30px 0;
 }
@@ -107,7 +97,6 @@ body {
     cursor: pointer;
 }
 
-/* Total Price Section */
 .cart-total {
     margin-top: 20px;
     font-size: 20px;
@@ -127,8 +116,6 @@ body {
     background-color: #218838;
 }
 
-
-/* Customization Section */
 .select {
     width: 100%;
 }
@@ -146,7 +133,6 @@ form .form-group {
     margin-top: 10px;
 }
 
-/* Footer Section */
 footer {
     background-color: #f8f9fa;
     padding: 20px;
@@ -157,7 +143,6 @@ footer p {
     margin: 0;
 }
 
-/* Grid Layout */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +151,7 @@ footer p {
 
 .menu-item, .promotional-item {
     margin-bottom: 20px;
-    flex: 1 1 30%; /* Each item will take up about 30% of the row width */
+    flex: 1 1 30%;
     max-width: 30%;
 }
 
@@ -179,10 +164,27 @@ footer p {
     object-fit: cover;
 }
 
-/* Adjustments for Smaller Screens */
 @media (max-width: 768px) {
     .menu-item, .promotional-item {
         flex: 1 1 100%;
     }
 }
 
+.checkout-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}

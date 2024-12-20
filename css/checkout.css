@@ -1,12 +1,10 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
 }
 
-/* Header and Footer Styles */
 header {
-    background-color: #6a4e23; /* Coffee Brown */
+    background-color: #6a4e23;
     color: white;
     padding: 10px 0;
 }
@@ -37,7 +35,6 @@ footer p {
     font-size: 1rem;
 }
 
-/* Checkout and Track Order Section Styles */
 .checkout-section,
 .track-order-section {
     background-color: #f4f1ea;
@@ -76,7 +73,6 @@ footer p {
     background-color: #f1a23b;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
     .checkout-section h2,
     .track-order-section h2 {

@@ -11,8 +11,6 @@
 </head>
 
 <body>
-
-    <!-- Header Section -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">Vikings Coffee</a>
@@ -37,13 +35,10 @@
             </div>
         </nav>
     </header>
-
-    <!-- Menu Section -->
     <section class="menu-section">
         <div class="container">
             <h2 class="menu-title">Our Menu</h2>
             <div class="row">
-                <!-- Coffee Item 1 -->
                 <div class="col-md-4 menu-item">
                     <div class="card">
                         <img src="assets/images/images/espresso.jfif" alt="Espresso" class="card-img-top">
@@ -55,8 +50,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Coffee Item 2 -->
                 <div class="col-md-4 menu-item">
                     <div class="card">
                         <img src="assets/images/images/cappucino.jfif" alt="Cappuccino" class="card-img-top">
@@ -68,8 +61,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Coffee Item 3 -->
                 <div class="col-md-4 menu-item">
                     <div class="card">
                         <img src="assets/images/images/latte-2.jfif" alt="Latte" class="card-img-top">
@@ -81,8 +72,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Coffee Item 4 -->
                 <div class="col-md-4 menu-item">
                     <div class="card">
                         <img src="assets/images/images/img-8.png" alt="Americano" class="card-img-top">
@@ -94,8 +83,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Coffee Item 5 -->
                 <div class="col-md-4 menu-item">
                     <div class="card">
                         <img src="assets/images/images/img-7.png" alt="Mocha" class="card-img-top">
@@ -107,8 +94,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Coffee Item 6 -->
                 <div class="col-md-4 menu-item">
                     <div class="card">
                         <img src="assets/images/images/img-10.png" alt="Flat White" class="card-img-top">
@@ -120,8 +105,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Coffee Item 7 -->
                 <div class="col-md-4 menu-item">
                     <div class="card">
                         <img src="assets/images/images/img-9.png" alt="Iced Coffee" class="card-img-top">
@@ -133,8 +116,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Coffee Item 8 -->
                 <div class="col-md-4 menu-item">
                     <div class="card">
                         <img src="assets/images/images/latte.jfif" alt="Iced Latte" class="card-img-top">
@@ -150,8 +131,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Promotions Section -->
     <section class="promotional-flavors py-5">
         <div class="container">
             <h2 class="text-center mb-4">Promotional Flavors</h2>
@@ -198,14 +177,10 @@
             </div>
         </div>
     </section>
-    
-
-    <!-- Customization Section -->
     <div<section class="customize-section">
         <div class="container">
             <h2 class="customize-title">Customize Your Order</h2>
             <form id="order-form">
-                <!-- Coffee Type Selection -->
                 <div class="form-group">
                     <label for="coffee-type">Choose Your Coffee Type</label>
                     <select id="coffee-type" class="form-control select" required>
@@ -215,8 +190,6 @@
                         <option value="mocha">Mocha</option>
                     </select>
                 </div>
-
-                <!-- Size Selection -->
                 <div class="form-group">
                     <label for="size">Choose Size</label>
                     <select id="size" class="form-control select" required>
@@ -225,8 +198,6 @@
                         <option value="large">Large</option>
                     </select>
                 </div>
-
-                <!-- Flavour Option -->
                 <div class="form-group">
                     <label for="flavour-option">Flavour Option</label>
                     <select class="form-control" id="flavour-option" required>
@@ -240,8 +211,6 @@
                         <option value="caffe-mocha">Caffe Mocha</option>           
                     </select>
                 </div>
-
-                <!-- Extra Options -->
                 <div class="form-group">
                     <label>Extras (Optional)</label>
                     <div>
@@ -251,20 +220,28 @@
                         <label><input type="checkbox" id="extra-milk" value="milk"> Extra Milk (+$0.5)</label>
                     </div>
                 </div>
-
-                <!-- Price Display -->
                 <div class="form-group">
                     <p id="total-price" class="price">Total Price: $0</p>
                 </div>
-
-                <!-- Add to Cart Button -->
                 <button type="submit" class="btn-success">Add to Cart</button>
             </form>
         </div>
     </section>
- 
-    <!-- Footer Section -->
- <!-- Footer Section -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <span id="closeCart" class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems">
+            </div>
+            <div class="cart-footer">
+                <button id="checkout" class="btn btn-primary">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+  <div class="checkout-section">
+    <button id="checkoutButton" class="btn-primary" onclick="window.location.href = 'cart.html';">Go to Cart</button>
+</div>
+
 <footer class="bg-light text-center text-md-left py-4">
     <div class="container">
         <div class="row">
@@ -287,9 +264,6 @@
         <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
     </div>
 </footer>
-
-
-    <!-- Javascript files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/menu.js"></script>
