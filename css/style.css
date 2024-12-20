@@ -1,0 +1,359 @@
+/* Global Body and Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+    color: #333;
+}
+
+/* Container for content */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+/* Container styling */
+/* Container styling */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4f0; /* Light coffee-colored background */
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+}
+
+/* Card styling */
+.image-card {
+    position: relative;
+    width: 100%; /* Make the card span full width */
+    max-height: 100%; /* Ensure it fits within the viewport */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.image-card img {
+    width: 100%; /* Stretch image to fit horizontally */
+    height: 100%; /* Scale image vertically */
+    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+}
+
+/* Caption styling */
+.image-caption {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Caption spans full width of image */
+    height: 100%; /* Ensures the caption is centered vertically */
+    color: #f9e79f; /* Light yellowish color */
+    text-align: center;
+    font-size: 48px; /* Large font size for emphasis */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for contrast */
+    box-sizing: border-box;
+    pointer-events: none; /* Disable interaction for cleaner design */
+}
+
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space between the image and the description */
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1; /* Makes the image take up half the space */
+    max-width: 50%; /* Ensures the image doesn't stretch beyond 50% of the container */
+    margin-right: 20px; /* Adds space between the image and description */
+}
+
+.about-image img {
+    width: 100%; /* Makes sure the image takes up the full width of its container */
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-description {
+    flex: 1; /* Makes the description take up half the space */
+    max-width: 50%;
+}
+
+.about-description h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack the image and description on top of each other */
+        align-items: center; /* Center the content horizontally */
+    }
+
+    .about-image, .about-description {
+        max-width: 100%; /* Allow the items to take up the full width on smaller screens */
+        margin-right: 0; /* Remove the margin on smaller screens */
+    }
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row */
+    justify-content: space-between; /* Equal spacing between images */
+    gap: 15px; /* Adds space between the images */
+    margin-top: 40px;
+}
+
+.gallery-item {
+    width: 30%; /* Adjust the width of the gallery items */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Makes sure the images fit correctly within their container */
+    border-radius: 8px;
+}
+
+/* Hover Effect */
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the image when hovering */
+}
+
+/* Responsive Styles for Gallery Section */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 48%; /* Two images per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%; /* Single image per row on very small screens */
+    }
+}
+
+/* Services Section */
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.service-card {
+    background-color: orange; /* Yellow background */
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Styles for Services Section */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%; /* Stacks cards on small screens */
+    }
+}
+
+/* Testimonial Section */
+.testimonials {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: inline-block;
+    background-color: #f9f9f9;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial .client-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* /* Login Section */
+#loginSection {
+    background-color: burlywood; /* Brown background for the box */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: none; /* Remove the outer box shadow */
+    margin-top: 50px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Input fields styling */
+#loginSection input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Light gray border for inputs */
+    border-radius: 4px;
+    background-color: #fff; /* White background for input fields */
+}
+
+/* Button styling */
+#loginSection button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue background for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+#loginSection button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Remove box shadow and make sure the borders are only around input fields */
+#loginSection {
+    border: 2px solid transparent; /* No outer border for the box */
+    border-radius: 8px;
+    background-color: burlywood; /* Maintain brown background */
+}
+
+#loginSection input {
+    border: 2px solid #a47c48; /* Use a darker brown color for input fields' borders */
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials {
+        padding: 40px 20px;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

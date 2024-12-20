@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/images/images/background-img.jfif'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#complete-order {
+    background-color: #FF5722;
+    margin-top: 20px;
+}
+
+#complete-order:hover {
+    background-color: #f44336;
+}
+
+/* Cart Section */
+#cart-items {
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    background-color: burlywood;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.cart-item button {
+    margin-left: 10px;
+    background-color: #FF9800;
+}
+
+.cart-item button:hover {
+    background-color: #f57c00;
+}
+
+#cart-total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Total Section */
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.total-section p {
+    margin: 0;
+}
+
+.total-section .total-label {
+    font-weight: bold;
+}
+
+.cart-item-remove {
+    background-color: #f44336;
+}
+
+.cart-item-remove:hover {
+    background-color: #d32f2f;
+}
+
+.cart-item-add {
+    background-color: #4CAF50;
+}
+
+.cart-item-add:hover {
+    background-color: #388e3c;
+}

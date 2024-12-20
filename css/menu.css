@@ -1,0 +1,188 @@
+/* General Layout */
+/* Set Background Color for the Page */
+body {
+    background-color: #6f4f37; /* Coffee brown color */
+    color: white; /* Make text color white to contrast with the brown background */
+}
+
+/* General Layout */
+.menu-section, .promotional-flavors {
+    margin-top: 30px;
+}
+
+/* Rest of the CSS styles remain unchanged */
+
+.menu-section, .promotional-flavors {
+    margin-top: 30px;
+}
+
+.menu-title, .customize-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.menu-item, .promotional-item {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #510994; /* Coffee color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #5b3f28;
+}
+
+.order-now {
+    margin-top: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.promo-price {
+    color: #d9534f; /* Discount color */
+    font-weight: bold;
+}
+/* Cart Section Styling */
+.cart-section {
+    padding: 30px 0;
+}
+
+.cart-items-list {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item h5 {
+    margin: 0;
+}
+
+.cart-item .remove-item {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item .change-quantity {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Total Price Section */
+.cart-total {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#complete-order-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#complete-order-btn:hover {
+    background-color: #218838;
+}
+
+
+/* Customization Section */
+.select {
+    width: 100%;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+#total-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#extra-syrup, #extra-milk {
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Grid Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item, .promotional-item {
+    margin-bottom: 20px;
+    flex: 1 1 30%; /* Each item will take up about 30% of the row width */
+    max-width: 30%;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .menu-item, .promotional-item {
+        flex: 1 1 100%;
+    }
+}
+

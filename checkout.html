@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order - Coffee Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Vikings Coffee</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Track Order Section -->
+    <section class="track-order-section py-5">
+        <div class="container">
+            <h2 class="text-center">Track Your Order</h2>
+            <form id="track-order-form">
+                <div class="form-group">
+                    <label for="order-id">Order ID</label>
+                    <input type="text" id="order-id" class="form-control" placeholder="Enter your order ID" required>
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">Track Order</button>
+                </div>
+            </form>
+            <div id="order-status" class="mt-4"></div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+<footer class="bg-light text-center text-md-left py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: info@coffeeshop.co.ke</p>
+                <p>Phone: +254 700 123 456</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Address</h5>
+                <p>123 Coffee Lane, Nairobi, Kenya</p>
+            </div>
+            <div class="col-md-4">
+                <h5>About Our Shop</h5>
+                <p>At Coffee Shop, we serve freshly brewed coffee with a touch of love. Our baristas craft every cup to perfection, ensuring that your experience is unforgettable. Come enjoy the finest coffee in the heart of Nairobi.</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center pt-3">
+        <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
+    </div>
+</footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>
