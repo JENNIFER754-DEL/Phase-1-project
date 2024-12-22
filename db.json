@@ -1,0 +1,114 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Espresso",
+      "description": "A strong and rich shot of coffee.",
+      "price": 100,
+      "image": "assets/images/images/espresso.jfif"
+    },
+    {
+      "id": 2,
+      "name": "Latte",
+      "description": "A creamy blend of espresso and steamed milk.",
+      "price": 150,
+      "image": "assets/images/images/latte-2.jfif"
+    },
+    {
+      "id": 3,
+      "name": "Cappuccino",
+      "description": "A perfect mix of espresso, steamed milk, and foam.",
+      "price": 130,
+      "image": "assets/images/images/cappucino.jfif"
+    },
+    {
+      "id": 4,
+      "name": "Mocha",
+      "description": "Espresso with chocolate and steamed milk.",
+      "price": 180,
+      "image": "assets/images/images/img-4.png"
+    },
+    {
+      "id": 5,
+      "name": "Americano",
+      "description": "Espresso diluted with hot water.",
+      "price": 120,
+      "image": "assets/images/images/img-7.png"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1001,
+      "userId": 1,
+      "items": [
+        {
+          "name": "Latte",
+          "price": 150,
+          "quantity": 2
+        },
+        {
+          "name": "Espresso",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 400,
+      "status": "Paid",
+      "paymentMethod": "Credit Card",
+      "shippingAddress": "123 Coffee Lane, Nairobi, Kenya"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "address": "123 Coffee Lane, Nairobi, Kenya"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "securepass",
+      "address": "456 Latte Blvd, Nairobi, Kenya"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "title": "Coffee Shop Interior",
+      "image": "assets/images/images/img-2.png"
+    },
+    {
+      "id": 2,
+      "title": "Barista at Work",
+      "image": "assets/images/images/img-3.png"
+    },
+    {
+      "id": 3,
+      "title": "Coffee Beans",
+      "image": "assets/images/images/img-4.png"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "userId": 1,
+      "review": "Great coffee and cozy ambiance!",
+      "rating": 5
+    }
+  ],
+  "auth": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "password": "securepass"
+    }
+  ]
+}

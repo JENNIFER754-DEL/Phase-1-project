@@ -1,38 +1,26 @@
-document.getElementById("checkout-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const address = document.getElementById("address").value;
-    const payment = document.getElementById("payment").value;
-
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    if (cart.length === 0) {
-        alert("Your cart is empty. Please add some items to your cart.");
-        return;
-    }
-
-   
-    const orderId = new Date().getTime();
-    const totalAmount = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
-
-   
-    let orderDetails = {
-        orderId: orderId,
-        name: name,
-        address: address,
-        payment: payment,
+function submitOrder() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+    const orderDetails = {
+        orderId: new Date().getTime(),
+        userId: 2,
         items: cart,
         total: totalAmount,
-        status: 'Paid'  
+        status: "Paid",
+        paymentMethod: "Credit Card",
+        shippingAddress: "123 Main St, City, Country"
     };
 
-   
-    localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
-
-    
-    alert("Payment Successful! Your order has been marked as Paid.");
-    
-   
-    window.location.href = "track-order.html";
-});
+    fetch("http://localhost:5000/orders", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(orderDetails)
+    })
+        .then(response => response.json())
+        .then(() => {
+            alert("Order placed successfully!");
+        })
+        .catch(error => console.error("Error submitting order:", error));
+}
